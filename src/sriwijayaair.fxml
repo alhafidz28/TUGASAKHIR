@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="600.0" style="-fx-background-color: #c9e5df;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SriwijayaController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="26.0" layoutY="7.0" prefHeight="50.0" prefWidth="240.0" text="BOOK an AIRPLANE">
+         <font>
+            <Font name="BebasNeue" size="41.0" />
+         </font>
+      </Label>
+      <Separator layoutX="14.0" layoutY="55.0" prefHeight="5.0" prefWidth="264.0" />
+      <AnchorPane layoutX="14.0" layoutY="69.0" prefHeight="425.0" prefWidth="572.0" style="-fx-background-color: #98cec3;" />
+      <AnchorPane layoutX="24.0" layoutY="79.0" prefHeight="402.0" prefWidth="552.0" style="-fx-background-color: #b5e0d7;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="71.0" prefHeight="31.0" prefWidth="264.0" text="Input Your Information Here !">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <GridPane layoutX="14.0" layoutY="30.0" prefHeight="330.0" prefWidth="421.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="173.0" minWidth="10.0" prefWidth="110.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="245.0" minWidth="10.0" prefWidth="245.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label contentDisplay="CENTER" prefHeight="45.0" prefWidth="209.0" text="Origin">
+                     <font>
+                        <Font name="Leelawadee UI" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="10.0" layoutY="37.0" prefHeight="44.0" prefWidth="139.0" text="Date of Departure" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Leelawadee UI" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="10.0" layoutY="37.0" prefHeight="47.0" prefWidth="149.0" text="Destination" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Leelawadee UI" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="10.0" layoutY="202.0" prefHeight="51.0" prefWidth="134.0" text="Many of Guests" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Leelawadee UI" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXComboBox fx:id="origin" onAction="#originn" prefHeight="37.0" prefWidth="245.0" GridPane.columnIndex="1" />
+                  <JFXComboBox fx:id="destination" onAction="#destinationn" prefHeight="25.0" prefWidth="256.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <JFXTextField fx:id="guests" onAction="#guestss" unFocusColor="BLACK" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <JFXTextField fx:id="depart" onAction="#departt" promptText="12/12/1212" unFocusColor="BLACK" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+            <Separator layoutX="89.0" layoutY="28.0" prefHeight="5.0" prefWidth="228.0" style="-fx-background-color: black;" />
+            <JFXButton fx:id="submit" layoutX="225.0" layoutY="360.0" onAction="#submitt" prefHeight="31.0" prefWidth="102.0" text="submit">
+               <font>
+                  <Font name="Bebas" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="back" layoutX="14.0" layoutY="502.0" onAction="#backk" prefHeight="39.0" prefWidth="109.0" text="back">
+         <font>
+            <Font name="Bebas" size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="126.0" fitWidth="173.0" layoutX="403.0" layoutY="12.0">
+         <image>
+            <Image url="@img/LOGO_SJ_VERTIKAL.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

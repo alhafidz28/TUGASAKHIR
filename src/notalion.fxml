@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="NotaLionController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="646.0" prefWidth="600.0" style="-fx-background-color: #c9e5df;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="180.0" layoutY="7.0" prefHeight="50.0" prefWidth="240.0" text="BOOK an AIRPLANE">
+               <font>
+                  <Font name="BebasNeue" size="41.0" />
+               </font>
+            </Label>
+            <Separator layoutX="168.0" layoutY="55.0" prefHeight="5.0" prefWidth="264.0" />
+            <AnchorPane layoutX="14.0" layoutY="69.0" prefHeight="520.0" prefWidth="572.0" style="-fx-background-color: #98cec3;" />
+            <AnchorPane layoutX="24.0" layoutY="79.0" prefHeight="498.0" prefWidth="552.0" style="-fx-background-color: #b5e0d7;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="144.0" layoutY="-1.0" prefHeight="31.0" prefWidth="264.0" text="NOTA">
+                     <font>
+                        <Font name="BebasNeue" size="26.0" />
+                     </font>
+                  </Label>
+                  <GridPane layoutX="66.0" layoutY="36.0" prefHeight="330.0" prefWidth="421.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="173.0" minWidth="10.0" prefWidth="110.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="245.0" minWidth="10.0" prefWidth="245.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label contentDisplay="CENTER" prefHeight="45.0" prefWidth="209.0" text="Origin">
+                           <font>
+                              <Font name="Leelawadee UI" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label contentDisplay="CENTER" layoutX="10.0" layoutY="37.0" prefHeight="44.0" prefWidth="139.0" text="Date of Departure" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Leelawadee UI" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label contentDisplay="CENTER" layoutX="10.0" layoutY="37.0" prefHeight="47.0" prefWidth="149.0" text="Destination" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Leelawadee UI" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label contentDisplay="CENTER" layoutX="10.0" layoutY="202.0" prefHeight="51.0" prefWidth="134.0" text="Many of Guests" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Leelawadee UI" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="origin" contentDisplay="CENTER" prefHeight="45.0" prefWidth="209.0" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Leelawadee UI" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="destination" contentDisplay="CENTER" prefHeight="47.0" prefWidth="149.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Leelawadee UI" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="depart" contentDisplay="CENTER" prefHeight="44.0" prefWidth="139.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Leelawadee UI" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="guests" contentDisplay="CENTER" prefHeight="51.0" prefWidth="134.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Leelawadee UI" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <Separator layoutX="162.0" layoutY="28.0" prefHeight="5.0" prefWidth="228.0" style="-fx-background-color: black;" />
+                  <Label contentDisplay="CENTER" layoutX="331.0" layoutY="412.0" prefHeight="45.0" prefWidth="46.0" text="Total">
+                     <font>
+                        <Font name="Leelawadee UI" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="total" contentDisplay="CENTER" layoutX="361.0" layoutY="412.0" prefHeight="45.0" prefWidth="109.0">
+                     <font>
+                        <Font name="Leelawadee UI" size="15.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="367.0" layoutY="445.0" prefHeight="5.0" prefWidth="109.0" />
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="back" layoutX="14.0" layoutY="593.0" onAction="#backk" prefHeight="39.0" prefWidth="109.0" text="back">
+               <font>
+                  <Font name="Bebas" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
