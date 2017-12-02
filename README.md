@@ -1,5 +1,0 @@
-![alt text](src/login.png)
-![alt text](src/signup.png)
-![alt text](src/nota.png)
-![alt text](src/subcontent.png)
-![alt text](src/content.png)
